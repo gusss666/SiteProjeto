@@ -1,0 +1,9 @@
+.sobe:hover{
+    transform: translateY(-5px);
+}
+.carrinho:hover{
+    transform: translateY(-5px);
+    background-color: white;
+    border-color: white;
+    color: black;
+}

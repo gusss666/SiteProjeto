@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="rafael.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav class="nav navbar-expand-lg navbar-dark"data-bs-theme="dark" style="background-color: #ff0000;">
+        <div class="container-fluid d-flex">
+            <a href="Pagina1.html"><img src="./images/logogrande.png" class="rounded-5  mt-2 mb-2 ms-2" alt="..."width="210px" height="60"></a>
+            <div class="container" style="width: 300px;"></div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="d-flex p-1" role="search">
+                    <input class="form-control me-2" style="width: 550px;" type="search"placeholder="Pesquisar produtos" aria-label="Search">
+                    <button class="btn btn-dark bi bi-search"type="submit"></button>
+                  </form>
+            </div>
+            <div class="me-auto d-flex mt-3">
+                <i class="bi bi-people-fill me-2 ms-3" style="font-size: 25px"></i>
+        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Entrar
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" onclick="irLogin()" href="#">Login</a></li>
+              <li><a class="dropdown-item" onclick="irCadastro()" href="#">Cadastrar-se</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Entrar pelo Gmail</a></li>
+            </ul>
+          </li>
+          
+        </ul>
+            </div>
+        </div>
+    </nav>
+    <img src="./images/test.gif" style="width: 100%; height: 2.5rem;" alt="">
+    
+    <div class="d-flex justify-content-between mt-5">
+        <div class="container">
+            <div class="ms-r-9 row g-2">
+                <div class="col-2">
+                    <button class="btn mb-3"><img src="images/produto1-1.jpg" onmouseover="slider('images/produto1-1.jpg')" style="width: 80px;height: 80px;" alt=""></button>
+                    <button class="btn mb-3"><img src="images/produto1-2.jpg" onmouseover="slider('images/produto1-2.jpg')" style="width: 80px;height: 80px;" alt=""></button>
+                    <button class="btn mb-3"><img src="images/produto1-3.png" onmouseover="slider('images/produto1-3.png')" style="width: 80px;" alt=""></button>
+                    <button class="btn mb-3"><img src="images/produto1.jpg" onmouseover="slider('images/produto1.jpg')" style="width: 80px;" alt=""></button>
+                </div>
+                <div class="col-10">
+                    <img src="images/produto1.jpg" class="ms-5 one" style="width: 400px;" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="container me-r-10" style="width: 45%;">
+            <h4>Módulo Taramps TS 400</h4>
+            <small style="color: gray;">Amplificador Digital 400w Rms</small>
+            <hr>
+            <h4><strong>R$99,99</strong></h4>
+            <small style="color: gray;">2x de R$99,99 no cartão sem juros <br></small>
+            <a href="https://wa.me/35988949463?text=Quero%20comprar%20um%20Módulo%20Taramps%20TS%20400"><button style="width: 400px;" class="btn btn-danger mt-4"><strong>COMPRAR</strong></button></a>
+            <button style="width: 400px;" data-bs-toggle="modal" data-bs-target="#modal1" class="btn btn-outline-danger mt-3"><strong>ADICIONAR AO CARRINHO</strong></button>
+            <div>
+                <label for="exampleDataList" class="form-label mt-4" style="color: gray;">Calcular Ferte</label>
+                <div class="d-flex">
+                    <input class="form-control" style="width: 260px;" list="datalistOptions" id="exampleDataList" placeholder="Digite seu CEP:">
+            <datalist id="datalistOptions">
+            <option value="Varginha MG">
+            <option value="New York">
+            <option value="São Paulo">
+            <option value="Los Angeles">
+            <option value="Chicago">
+            </datalist>
+            <button class="btn btn-outline-danger ms-4" style="width: 115px;"><strong>CALCULAR</strong></button>
+                </div>
+            </div>
+            
+                    </div>
+
+    </div>
+
+    <div class="mt-r-8 mb-5 ms-r-10"><h4><strong><u>MAIS PRODUTOS</u></strong></h4></div>
+
+    <div class="d-flex text-center container">
+        <div class="container">
+            <img src="images/produto3.jpg" class="sobe" style="width: 150px;height: 50;" alt="">
+            <h5 class="card-title">Pósitron SP2230BT</h5>
+                <button onclick="irProduto3()" class="btn btn-danger mt-3" style="width: 150px;"><strong>Ver mais</strong></button>
+        </div>
+        <div class="container">
+            <img src="images/produto4.png" class="sobe" style="width: 150px;height: 50;" alt="">
+            <h5 class="card-title">Pioneer MVH S218BT</h5>
+                <button onclick="irProduto4()" class="btn btn-danger mt-3" style="width: 150px;"><strong>Ver mais</strong></button>
+        </div>
+        <div class="container">
+            <img src="images/produto7.png" class="sobe" style="width: 150px;height: 50;" alt="">
+            <h5 class="card-title">Alarme Automotivo Pósitron</h5>
+                <button onclick="irProduto7()" class="btn btn-danger mt-3" style="width: 150px;"><strong>Ver mais</strong></button>
+        </div>
+        <div class="container">
+            <img src="images/produto8.jpg" class="mt-3 sobe" style="width: 150px;height: 50;" alt="">
+            <h5 class="card-title mt-4">Processador Crossover Audio</h5>
+                <button onclick="irProduto8()" class="btn btn-danger mt-3" style="width: 150px;"><strong>Ver mais</strong></button>
+        </div>
+    </div>
+
+    <div class="mt-r-6 ms-r-10">
+        <h4><strong><u>DETALHES SOBRE O PRODUTO</u></strong></h4>
+        <h5 class="mt-5 mb-4">Características principais</h5>
+        <p><strong>MARCA:</strong> Tapamps <br><strong>LINHA: </strong>TS <br><strong>MODELO: </strong>TS 400x4 - TS400X4 - TS400 - TS 400 - TS 400X4 - <br> Potência TS400 - Barra - Módulo - Amplificador - Modulo estereo - Som automotivo <br><strong>POTENÊNCIA DE SAÍDA: </strong>400 W</p>
+        <h5 class="mt-5">Descrição</h5>
+        <p>O módulo amplificador TS 400×4 da Taramps foi desenvolvido com a mais <br> alta performance pros mais variados tipos de sistemas de som automotivo. É multicanal, <br> sendo 4 canais de 100 Watts RMS, com potência máxima de 400 Watts RMS e <br> com impedância de 2 ohms. O TS 400×4 é FULL RANGE tocando todas as frequências na <br> medida certa para você. Possui proteção térmica e contra curto-circuito, além do LED <br> indicativo e crossover.</p>
+    </div>
+
+    
+    <div class="d-flex container mt-r-10">
+        <a class="me-5 mt-2" href="">Precisa de ajuda?</a>
+        <img src="./images/image 5.png" style="height: 50px; width: 65%;" alt="">
+        <p class="ms-5"><u>Parcele em até <br> 12x sem juros</u></p>
+    </div>
+
+    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">ERROR</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h6>Nosso carrinho ainda não esta funcionando :(</h6>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="funcionalidade.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

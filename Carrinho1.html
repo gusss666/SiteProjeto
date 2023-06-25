@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="rafael.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav class="nav navbar-expand-lg navbar-dark"data-bs-theme="dark" style="background-color: #ff0000;">
+        <div class="container-fluid d-flex">
+            <a href="Pagina1.html"><img src="./images/logogrande.png" class="rounded-5  mt-2 mb-2 ms-2" alt="..."width="210px" height="60"></a>
+            <div class="container" style="width: 300px;"></div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="d-flex p-1" role="search">
+                    <input class="form-control me-2" style="width: 550px;" type="search"placeholder="Pesquisar produtos" aria-label="Search">
+                    <button class="btn btn-dark bi bi-search"type="submit"></button>
+                  </form>
+            </div>
+            <div class="me-auto d-flex mt-3">
+                <i class="bi bi-people-fill me-2 ms-3" style="font-size: 25px"></i>
+        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Entrar
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" onclick="irLogin()" href="#">Login</a></li>
+              <li><a class="dropdown-item" onclick="irCadastro()" href="#">Cadastrar-se</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Entrar pelo Gmail</a></li>
+            </ul>
+          </li>
+          
+        </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="text-center"><i class="bi bi-cart3" style="font-size: 150px"></i></div>
+    <h5 class="text-center"><strong>Seu carrinho está vazio</strong></h5>
+    <div class="text-center mb-5"><small>Adicione produtos clicando no botão “Compras” na página de produtos </small></div>
+    <div class="text-center"><button type="button" class="btn btn-outline-danger" onclick="irPaginaInicial()" style="width: 30%;"><strong>VOLTAR A PÁGINA INICIAL</strong></button></div>
+
+
+    <div class="d-flex container mt-r-10">
+        <a class="me-5 mt-2" href="">Precisa de ajuda?</a>
+        <img src="./images/image 5.png" style="height: 50px; width: 65%;" alt="">
+        <p class="ms-5"><u>Parcele em até <br> 12x sem juros</u></p>
+    </div>
+
+
+    <script type="text/javascript" src="index.js"></script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</html>

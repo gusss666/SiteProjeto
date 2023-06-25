@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="rafael.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav class="nav navbar-expand-lg navbar-dark"data-bs-theme="dark" style="background-color: #ff0000;">
+        <div class="container-fluid d-flex">
+            <a href="Pagina1.html"><img src="./images/logogrande.png" class="rounded-5  mt-2 mb-2 ms-2" alt="..."width="210px" height="60"></a>
+            <div class="container" style="width: 300px;"></div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="d-flex p-1" role="search">
+                    <input class="form-control me-2" style="width: 550px;" type="search"placeholder="Pesquisar produtos" aria-label="Search">
+                    <button class="btn btn-dark bi bi-search"type="submit"></button>
+                  </form>
+            </div>
+            <div class="me-auto d-flex mt-3">
+                <i class="bi bi-people-fill me-2 ms-3" style="font-size: 25px"></i>
+        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Entrar
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" onclick="irLogin()" href="#">Login</a></li>
+              <li><a class="dropdown-item" onclick="irCadastro()" href="#">Cadastrar-se</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Entrar pelo Gmail</a></li>
+            </ul>
+          </li>
+          
+        </ul>
+            </div>
+        </div>
+    </nav>
+
+    <img src="./images/test.gif" style="width: 100%; height: 2.5rem;" alt="">
+
+
+    <div>
+        <div class="text-center container-fluid " style="background-image: url('images/Untitled-1.png');width: 100%;height: 10rem;">
+            <h1 class="pt-5" style="color: white;"><Strong>PRODUTOS</Strong></h1>
+        </div>
+        <div class="text-center">
+            <h4 class="mt-r-6">AS <STRong>MELHORES</STRong> MARCAS</h4>
+        </div>
+        <div class="text-center container mt-5">
+            <img src="images/eros.png" class="me-4" alt="">
+            <img src="images/JBL-Simbolo.png" class="me-r-3" style="height: 17%;width: 17%;" alt="">
+            <img src="images/Logomarca_Alta-02.png" class="me-5" style="height: 19%;width: 19%;" alt="">
+            <img src="images/positron.jpg" class="me-5" style="height: 16%;width: 16%;" alt="">
+            <img src="images/Pioneer_logo.svg.png" style="height: 16%;width: 16%;" alt="">
+        </div>
+
+        <div class="d-flex text-center container mt-r-8">
+            <div class="card" style="width: 18rem;">
+                <img src="images/produto1.jpg" class="card-img-top ms-4 mt-2 sobe" style="width: 250px;height: 300px;" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mt-2">Módulo Taramps ts 400x4</h5>
+                  <a href="Produto1.html" class="btn btn-danger mt-3" style="width: 150px;">Ver mais</a>
+                </div>
+              </div>
+              <div class="card ms-5" style="width: 18rem;">
+                <img src="images/produto2.jpg" class="card-img-top mt-1 sobe" style="height: 300px;" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mt-3">Pioneer MVH S218BT</h5>
+                  <a href="Produto2.html" class="btn btn-danger mt-3" style="width: 150px;">Ver mais</a>
+                </div>
+              </div>
+              <div class="card ms-5" style="width: 18rem;">
+                <img src="images/produto3.jpg" class="card-img-top ms-3 sobe" style="width: 90%;" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title mt-2">Pósitron SP2230BT</h5>
+                  <a href="Produto3.html" class="btn btn-danger mt-3" style="width: 150px;">Ver mais</a>
+                </div>
+              </div>
+              <div class="card ms-5" style="width: 18rem;">
+                <img src="images/produto4.png" class="card-img-top mt-3 sobe" style="height: 300px;" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title ">Pioneer MVH S218BT</h5>
+                  <a href="Produto4.html" class="btn btn-danger mt-3" style="width: 150px;">Ver mais</a>
+                </div>
+              </div>
+        </div>
+
+        <div class="d-flex text-center container mt-5">
+          <div class="card" style="width: 18rem;">
+            <img src="images/produto5.jpg" class="card-img-top ms-4 mt-2 sobe" style="width: 250px;height: 300px;" alt="...">
+            <div class="card-body">
+              <h5 class="card-title mt-2">Fonte Digital 70a Usina Bivolt 12v</h5>
+              <a href="Produto5.html" class="btn btn-danger mt-3" style="width: 150px;">Ver mais</a>
+            </div>
+          </div>
+          <div class="card ms-5" style="width: 18rem;">
+            <img src="images/produto6.jpg" class="card-img-top mt-1 sobe" style="height: 300px;" alt="...">
+            <div class="card-body">
+              <h5 class="card-title mt-3">Processador Crossover Audio Digital Equaliza</h5>
+              <a href="Produto6.html" class="btn btn-danger mt-3" style="width: 150px;">Ver mais</a>
+            </div>
+          </div>
+          <div class="card ms-5" style="width: 18rem;">
+            <img src="images/produto7.png" class="card-img-top mt-1 sobe" style="height: 300px;" alt="...">
+            <div class="card-body">
+              <h5 class="card-title mt-3">Alarme Automotivo Pósitron Ex 360</h5>
+              <a href="Produto7.html" class="btn btn-danger mt-3" style="width: 150px;">Ver mais</a>
+            </div>
+          </div>
+          <div class="card ms-5" style="width: 18rem;">
+            <img src="images/produto8.jpg" class="card-img-top mt-1 ms-3 mb-4 sobe" style="height: 270px;width: 90%;" alt="...">
+            <div class="card-body">
+              <h5 class="card-title mt-4">Processador Crossover Audio Digital Equaliza</h5>
+              <a href="Produto8.html" class="btn btn-danger mt-3" style="width: 150px;">Ver mais</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex container mt-r-10">
+          <a class="me-5 mt-2" href="">Precisa de ajuda?</a>
+          <img src="./images/image 5.png" style="height: 50px; width: 65%;" alt="">
+          <p class="ms-5"><u>Parcele em até <br> 12x sem juros</u></p>
+      </div>
+    
+
+
+    <script type="text/javascript" src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
